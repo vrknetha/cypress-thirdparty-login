@@ -1,0 +1,16 @@
+{
+  "name": "cypress-thirdparty-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.4.0",
+    "playwright": "^1.8.0"
+  }
+}
