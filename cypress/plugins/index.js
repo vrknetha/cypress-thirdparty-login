@@ -15,15 +15,17 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-const GetSession = require(`../../session`);
+const {GetSession} = require(`../../session`);
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
   on(`task`, {
-    GetSession({username, password, url}) {
+    getSession({username, password, url}) {
       return new Promise(async resolve => {
         resolve(await GetSession(username, password, url));
       });
     }
   })
+
+  return config;
 }
